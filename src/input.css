@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;400&family=Kodchasan:wght@500&display=swap"); */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+/* APPLIES */
+
+.background-image {
+  @apply w-full h-auto object-fill opacity-50;
+}
+
+.gradient-primary {
+  @apply bg-gradient-to-tr from-primary to-secondary;
+}
+
+.gradient-secondary {
+  @apply bg-gradient-to-tr from-special-primary to-special-secondary;
+}
+
+.social-media-button {
+  @apply w-10 h-10 rounded-full bg-white;
+}
+
+.social-media-icon {
+  @apply text-2xl text-black;
+}
+
+/* CSS */
+
+.rock-salt {
+  font-family: "Rock Salt", cursive;
+}
+
+.offer-section {
+  clip-path: polygon(0% 25%, 100% 0%, 100% 75%, 0% 100%);
+}
