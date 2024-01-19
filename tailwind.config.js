@@ -18,6 +18,11 @@ module.exports = {
         red: "#ff0000",
         green: "#00ff00",
         blue: "#0000ff",
+        "grey-10": "#08090B",
+        "grey-15": "#16181d",
+        "grey-20": "#1D1F22",
+        "grey-30": "#333437",
+        "grey-40": "#4D4F51",
       },
       height: {
         offer: "36rem",

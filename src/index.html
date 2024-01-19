@@ -10,6 +10,8 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="./script.js" defer></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -44,25 +46,52 @@
       </div>
 
       <!-- HEADER & NAVBAR -->
-      <header id="header" class="sticky top-0">
+      <header id="header" class="sticky z-10">
         <!-- menu bar -->
         <nav
-          class="w-full h-16 flex justify-between pr-4 pl-0 text-tertiary font-bold"
+          class="w-full h-20 flex justify-between px-4 text-tertiary bg-grey-15"
         >
           <div
             id="logo"
-            class="w-40 h-full flex justify-center items-center gap-x-2 text-2xl"
+            class="h-full flex justify-center items-center gap-x-2 text-2xl"
           >
-            Shoes-On
+            <img
+              src="./logo.png"
+              alt="logo"
+              class="w-auto h-full object-contain"
+            />
+            <p>Shoes-On</p>
           </div>
 
+          <!-- WIDE SCREENS -->
           <div
-            id="sign-in"
-            class="w-80 h-full flex justify-evenly items-center text-lg text-one"
+            class="w-80 h-full hidden md:flex justify-evenly items-center text-lg font-bold text-one"
           >
             <a href="#">Store</a>
             <a href="#">Brands</a>
             <a href="#">Special Edition</a>
+          </div>
+
+          <!-- NARROW SCREENS -->
+          <button
+            id="menu-btn"
+            class="h-full md:hidden text-2xl text-one menu-btn"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div
+            id="dropdown-menu"
+            class="hidden md:hidden flex-col justify-center items-center gap-y-2 mr-4 py-2 absolute right-0 top-20 text-lg text-one rounded-md bg-grey-20"
+          >
+            <a href="#" class="w-full px-8 py-2 text-center hover:bg-grey-30">
+              Store
+            </a>
+            <a href="#" class="w-full px-8 py-2 text-center hover:bg-grey-30">
+              Brands
+            </a>
+            <a href="#" class="w-full px-8 py-2 text-center hover:bg-grey-30">
+              Special Edition
+            </a>
           </div>
         </nav>
       </header>
