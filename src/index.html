@@ -102,16 +102,16 @@
       >
         <div class="w-full h-full absolute">
           <div
-            class="w-10 h-10 absolute left-5 top-10 rounded-full gradient-primary"
+            class="w-10 h-10 absolute -left-5 top-32 sm:left-5 sm:top-10 rounded-full gradient-primary"
           ></div>
           <div
             class="w-28 h-28 absolute -right-14 top-20 rounded-full gradient-primary"
           ></div>
           <div
-            class="w-28 h-28 absolute -left-14 top-60 rounded-full gradient-primary"
+            class="hidden sm:flex w-28 h-28 absolute -left-14 top-60 rounded-full gradient-primary"
           ></div>
           <div
-            class="w-16 h-16 absolute right-12 top-96 rounded-full gradient-primary"
+            class="hidden sm:flex w-16 h-16 absolute right-12 top-96 rounded-full gradient-primary"
           ></div>
           <div
             class="w-16 h-16 absolute -left-10 top-100 rounded-full gradient-primary"
@@ -119,27 +119,34 @@
         </div>
 
         <h3
-          class="font-bold gradient-primary bg-clip-text text-transparent text-tertiary rock-salt"
+          class="gradient-primary bg-clip-text text-lg md:text-2xl lg:text-3xl text-transparent text-tertiary text-center font-bold rock-salt"
+          style="line-height: 3rem !important"
         >
           GO GET THEM NOW!
         </h3>
 
         <div class="w-stain h-stain flex justify-evenly items-center">
-          <svg viewBox="0 0 480 480">
-            <path
-              fill="#ff5c47"
-              d="M373.5,260.5Q368,281,325.5,276Q283,271,314.5,328.5Q346,386,305.5,352Q265,318,252.5,374.5Q240,431,215,412.5Q190,394,188,354Q186,314,144,327Q102,340,121.5,306Q141,272,86,256Q31,240,78.5,221.5Q126,203,121.5,177Q117,151,152,159Q187,167,193.5,141.5Q200,116,220,69Q240,22,257,79Q274,136,307.5,118.5Q341,101,318.5,150Q296,199,366,187.5Q436,176,407.5,208Q379,240,373.5,260.5Z"
-            />
-          </svg>
+          <div
+            class="w-96 h-96 md:w-[440px] md:h-[440px] lg:w-[500px] lg:h-[500px]"
+          >
+            <svg viewBox="0 0 480 480" width="100%" height="100%">
+              <path
+                fill="#ff5c47"
+                d="M373.5,260.5Q368,281,325.5,276Q283,271,314.5,328.5Q346,386,305.5,352Q265,318,252.5,374.5Q240,431,215,412.5Q190,394,188,354Q186,314,144,327Q102,340,121.5,306Q141,272,86,256Q31,240,78.5,221.5Q126,203,121.5,177Q117,151,152,159Q187,167,193.5,141.5Q200,116,220,69Q240,22,257,79Q274,136,307.5,118.5Q341,101,318.5,150Q296,199,366,187.5Q436,176,407.5,208Q379,240,373.5,260.5Z"
+              />
+            </svg>
+          </div>
 
           <img
             src="../assets/main.png"
             alt="main"
-            class="w-52 h-auto absolute"
+            class="w-40 md:w-52 lg:w-60 h-auto absolute"
           />
         </div>
 
-        <button class="w-56 h-16 rounded-full bg-tertiary text-white text-xl">
+        <button
+          class="px-6 py-3 sm:py-4 rounded-full bg-tertiary text-white text-md sm:text-xl"
+        >
           Go to the store
         </button>
       </section>
