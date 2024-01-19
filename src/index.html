@@ -214,27 +214,56 @@
       </section>
 
       <!-- OFFER -->
-      <section
-        class="w-full h-offer flex justify-center items-center mt-44 gradient-primary offer-section"
-      >
-        <div class="w-1/2 h-3/5 mt-20">
-          <img
-            src="../assets/offer.png"
-            alt="offer shoes"
-            class="w-full h-full object-contain"
-          />
-        </div>
+      <section class="w-full col-center mt-44 bg-reds">
+        <!-- WIDE SCREENS -->
         <div
-          class="w-1/2 h-3/5 flex flex-col justify-center items-center -mt-20 px-44 text-white"
+          class="w-full hidden lg:flex justify-center items-center gap-x-16 py-44 gradient-primary offer-section"
         >
-          <h4 class="rock-salt">Special Offer</h4>
-          <p class="text-center mt-4 text-xl">
+          <div class="w-80 h-80 mt-12">
+            <img
+              src="../assets/offer.png"
+              alt="offer shoes"
+              class="w-full h-full object-contain"
+            />
+          </div>
+
+          <div
+            class="w-96 flex flex-col justify-center items-center text-white bg-blues"
+          >
+            <h4 class="rock-salt">Special Offer</h4>
+            <p class="text-center mt-4 text-xl">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+              nobis.
+            </p>
+
+            <button
+              class="w-56 h-16 mt-10 bg-white text-primary text-2xl rounded-full drop-shadow-xl"
+            >
+              Buy now
+            </button>
+          </div>
+        </div>
+
+        <!-- NARROW SCREENS -->
+        <div
+          class="w-full lg:hidden col-center px-10 sm:px-20 py-16 gradient-primary text-white"
+        >
+          <h4 class="text-center rock-salt">Special Offer</h4>
+          <p class="text-center mt-4 text-lg sm:text-xl">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis,
             nobis.
           </p>
 
+          <div class="w-40 h-40 sm:w-64 sm:h-64 my-16">
+            <img
+              src="../assets/offer.png"
+              alt="offer shoes"
+              class="w-full h-full object-contain"
+            />
+          </div>
+
           <button
-            class="w-56 h-16 mt-10 bg-white text-primary text-2xl rounded-full drop-shadow-xl"
+            class="px-8 sm:px-12 py-2 sm:py-4 bg-white text-primary text-lg sm:text-xl rounded-full drop-shadow-xl"
           >
             Buy now
           </button>
