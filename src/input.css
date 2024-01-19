@@ -78,3 +78,9 @@ h5 {
 .offer-section {
   clip-path: polygon(0% 25%, 100% 0%, 100% 75%, 0% 100%);
 }
+
+#background {
+  background-image: url("../assets/bg-shapes.png");
+  background-size: contain;
+  background-position: center;
+}
